@@ -1,4 +1,4 @@
-import React, { useState, Reset } from 'react';
+import React, { useState } from 'react';
 import Menu from '../componentes/menu';
 import './contato.css';
 import api from '../config/api';
@@ -79,7 +79,6 @@ function Contato() {
                     Sucesso === 'N' ? setSucesso('Nulo') : null,
                     Sucesso === 'S' ? setSucesso('Nulo') : null
                 }
-
 
             </form>
         </div>

@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: "http://aulanode.ddns.net:9001/api"
+    baseURL: "https://aulanode.ddns.net:9001/api"
 
 });
 
