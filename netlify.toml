@@ -1,6 +1,4 @@
 [build]
 base = "."   
 command = "npm run build"
-commandOrigin = "config"
 publish = "./build"
-publishOrigin = "config"
