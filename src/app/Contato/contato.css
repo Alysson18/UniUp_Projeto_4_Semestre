@@ -1,0 +1,48 @@
+.teste{
+  height: 100%;
+  background-color: #f3f5f6;
+}
+
+.formulario-contato {
+  width: 100%;
+  max-width: 550px;
+  padding: 15px;
+  margin: auto;
+  margin-top: auto; 
+}
+
+.form-control:focus{
+  border-color: #ffa968;  
+  box-shadow: 0 0 3px 3px #ffa968bb ;
+  outline: 0 none;  
+}
+
+.btnEnviar{
+  background-color: #f2890b;  
+  border-style: none;
+  border-color: #c36f2f;
+  color: #fff;   
+}
+
+.btnEnviar:hover{
+  background-color: #fa9a51;  
+  color: #fff; 
+}
+
+.custom-select:focus{
+  border-color: #ffa968;  
+  box-shadow: 0 0 3px 3px #ffa968bb ;
+  outline: 0 none;  
+}
+
+.custom-select{
+  width: 100%;
+  max-width: 550px;
+  padding: 5px;
+  margin: auto;
+  border-color: silver;
+}
+
+.solicitacao{
+  resize: none;
+}

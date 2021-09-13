@@ -1,0 +1,13 @@
+.navbar{
+    background-color: black;
+}
+
+.col-100{
+    width: 100%;
+    float: left;
+    position: relative;
+}
+.slider-principal{
+    width: auto;
+    height: 50px;
+}

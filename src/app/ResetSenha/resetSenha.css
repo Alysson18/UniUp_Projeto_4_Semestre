@@ -1,0 +1,24 @@
+
+.login-links{
+    text-decoration: none;
+    font-size: 13pt;
+    color: #fa6c00; 
+}
+
+.btnReset{
+  background-color: #f2890b;  
+  border-style: none;
+  border-color: #c36f2f;
+  color: #fff; 
+}
+
+.btnReset:hover{
+  background-color: #fa9a51;  
+  color: #fff; 
+}
+
+.form-control:focus{
+  border-color: #ffa968;  
+  box-shadow: 0 0 3px 3px #ffa968bb ;
+  outline: 0 none;  
+}
