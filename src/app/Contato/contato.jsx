@@ -41,7 +41,7 @@ function Contato() {
     }
 
     return <div className="contato"> <Menu />
-        <div className="d-flex align-items-center text-center form-container teste">
+        <div className="d-flex align-items-center text-center contato_Stilo">
             <form className="formulario-contato">
                 <div className="form-group">
                     <label for="exampleFormControlInput1">Endereço de Email</label>
