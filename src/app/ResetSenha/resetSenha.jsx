@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './resetSenha.css';
-
-import firebase from '../config/firebase';
 import 'firebase/auth';
+import api from '../config/api';
 
 function ResetSenha() {
 
@@ -12,13 +11,21 @@ function ResetSenha() {
     const [sucesso, setSucesso] = useState('');
 
     function recuperarSenha() {
-        firebase.auth().sendPasswordResetEmail(email).then(resultado => {
-            setMensagem('')
-            setSucesso('E-mail enviado com Sucesso!')
-        }).catch(erro => {
+        api.post("/esquecisenha", { "email": email }).then(function (AxiosResponse) {
+            setSucesso('S')
+            if (AxiosResponse.data === "Email Enviado com Sucesso") {
+                setSucesso(AxiosResponse.data)
+                setMensagem('')
+            }
+            else {
+                setMensagem(AxiosResponse.data)
+                setSucesso('')
+            }
+        }).catch(function (error) {
             setSucesso('')
-            setMensagem('Erro ao Enviar E-mail: ' + erro.message)
-        })
+            setMensagem('Erro ao Enviar E-mail')
+        });
+
     }
 
     return <div className="d-flex align-items-center text-center form-container">
