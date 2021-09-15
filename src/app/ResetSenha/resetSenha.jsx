@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './resetSenha.css';
-import 'firebase/auth';
 import api from '../config/api';
 
 function ResetSenha() {
@@ -18,8 +17,15 @@ function ResetSenha() {
                 setMensagem('')
             }
             else {
-                setMensagem(AxiosResponse.data)
-                setSucesso('')
+                if (email === '') {
+
+                    setMensagem('Email deve ser Preenchido')
+                    setSucesso('')
+                }
+                else {
+                    setMensagem(AxiosResponse.data)
+                    setSucesso('')
+                }
             }
         }).catch(function (error) {
             setSucesso('')
