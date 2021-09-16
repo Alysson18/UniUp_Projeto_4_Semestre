@@ -1,20 +1,22 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useContext } from 'react';
+import { Link, Redirect } from 'react-router-dom';
 import './resetSenha.css';
 import api from '../config/api';
+
 
 function ResetSenha() {
 
     const [email, setEmail] = useState('');
     const [mensagem, setMensagem] = useState('');
-    const [sucesso, setSucesso] = useState('');
+    const [Sucesso, setSucesso] = useState('');
+
 
     function recuperarSenha() {
         api.post("/esquecisenha", { "email": email }).then(function (AxiosResponse) {
-            setSucesso('S')
             if (AxiosResponse.data === "Email Enviado com Sucesso") {
                 setSucesso(AxiosResponse.data)
                 setMensagem('')
+
             }
             else {
                 if (email === '') {
@@ -30,6 +32,7 @@ function ResetSenha() {
         }).catch(function (error) {
             setSucesso('')
             setMensagem('Erro ao Enviar E-mail')
+
         });
 
     }
@@ -46,7 +49,12 @@ function ResetSenha() {
             <button onClick={recuperarSenha} className="btnReset w-100 btn-lg mt-3" type="button">Enviar</button>
 
             {mensagem.length > 0 ? <div className="alert alert-danger mt-2"> {mensagem} </div> : null}
-            {sucesso.length > 0 ? <div className="alert alert-success mt-2"> {sucesso} </div> : null}
+            {Sucesso.length > 0 ? <div className="alert alert-success mt-2"> {Sucesso} </div> : null}
+
+
+            {
+                Sucesso === 'S' ? <Redirect to='/app/alterarSenha' /> : null
+            }
 
             <div className="login-links mt-3">
                 <Link to="/" className="mx-3">Fazer Login</Link>

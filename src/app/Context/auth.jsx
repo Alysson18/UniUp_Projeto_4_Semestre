@@ -1,17 +1,17 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
 const AuthContext = React.createContext({});
 
-function AuthProvider(props){
+function AuthProvider(propis) {
     let isLogado = localStorage.getItem("logado");
 
     const [logado, setLogado] = useState(isLogado === "S" ? true : false);
-    
+
     return (
-        <AuthContext.Provider value={{logado, setLogado}}>
-            {props.children}
+        <AuthContext.Provider value={{ logado, setLogado }}>
+            {propis.children}
         </AuthContext.Provider>
     )
 }
 
-export {AuthContext, AuthProvider};
+export { AuthContext, AuthProvider };
