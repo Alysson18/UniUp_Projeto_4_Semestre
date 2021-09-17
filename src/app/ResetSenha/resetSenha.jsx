@@ -9,6 +9,7 @@ function ResetSenha() {
     const [email, setEmail] = useState('');
     const [mensagem, setMensagem] = useState('');
     const [Sucesso, setSucesso] = useState('');
+    const [Redirecionar, setRedirecionar] = useState('');
 
 
     function recuperarSenha() {
@@ -16,12 +17,12 @@ function ResetSenha() {
             if (AxiosResponse.data === "Email Enviado com Sucesso") {
                 setSucesso(AxiosResponse.data)
                 setMensagem('')
-
+                setRedirecionar('S')
             }
             else {
                 if (email === '') {
 
-                    setMensagem('Email deve ser Preenchido')
+                    setMensagem('Email Deve ser Preenchido')
                     setSucesso('')
                 }
                 else {
@@ -37,6 +38,7 @@ function ResetSenha() {
 
     }
 
+
     return <div className="d-flex align-items-center text-center form-container">
         <form className="form-signin">
             <img className="mb-3" src="../img/Logo_Login.png" alt="" width="240" />
@@ -49,12 +51,13 @@ function ResetSenha() {
             <button onClick={recuperarSenha} className="btnReset w-100 btn-lg mt-3" type="button">Enviar</button>
 
             {mensagem.length > 0 ? <div className="alert alert-danger mt-2"> {mensagem} </div> : null}
-            {Sucesso.length > 0 ? <div className="alert alert-success mt-2"> {Sucesso} </div> : null}
-
+            {Sucesso.length > 0 ? <div className="alert alert-success mt-2"> {Sucesso}   </div> : null}
 
             {
-                Sucesso === 'S' ? <Redirect to='/app/alterarSenha' /> : null
+                Redirecionar === 'S' ? <Redirect to='/app/alterarSenha' /> : null
+
             }
+
 
             <div className="login-links mt-3">
                 <Link to="/" className="mx-3">Fazer Login</Link>

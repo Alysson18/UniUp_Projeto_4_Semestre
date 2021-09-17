@@ -1,5 +1,21 @@
+.container{
+   margin: auto;
+   margin-left: auto  
+}
+
 .navbar{
     background-color: black;
+}
+
+.Itens_Nav_Bar{
+    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.logo{
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 .navbar .logout{
@@ -29,7 +45,7 @@
     width: auto;  
     margin: auto;
     margin-left: 30px;
-    margin-right: 100px;
+    margin-right: auto;
     height: auto;
 }
 

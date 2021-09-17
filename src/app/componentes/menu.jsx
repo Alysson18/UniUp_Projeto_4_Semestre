@@ -15,7 +15,7 @@ function Menu() {
     return <nav className="navbar  navbar-expand-md navbar-dark">
 
         <div className="container">
-            <Link to="/app/site" className="navbar-brand">
+            <Link to="/app/site" className="navbar-brand logo">
                 <img src="../img/Logo_Nav-Bar_2.png" alt="" width="150" height="" />
             </Link>
             <button className="navbar-toggler me-1" type="button" data-bs-toggle="collapse"
@@ -23,8 +23,8 @@ function Menu() {
                 aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="collapse navbar-collapse ms-4" id="navbarSupportedContent">
-                <ul className="navbar-nav me-2">
+            <div className="collapse navbar-collapse Itens" id="navbarSupportedContent">
+                <ul className="navbar-nav Itens_Nav_Bar">
                     <li className="nav-item">
                         <Link to="/app/site" className="nav-link">Inicio</Link>
                     </li>
@@ -36,6 +36,9 @@ function Menu() {
                     </li>
                     <li className="nav-item">
                         <Link to="/#" className="nav-link">Notas de Provas</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/app/contato" className="nav-link">Frequência</Link>
                     </li>
                     <li className="nav-item">
                         <Link to="/app/contato" className="nav-link">Contato</Link>

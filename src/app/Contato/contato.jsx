@@ -44,26 +44,26 @@ function Contato() {
         <div className="d-flex align-items-center text-center contato_Stilo">
             <form className="formulario-contato">
                 <div className="form-group">
-                    <label for="exampleFormControlInput1">Endereço de Email</label>
-                    <input onChange={alterarEmail} type="email" className="form-control" placeholder="nome@exemplo.com" autoFocus required />
+                    <label for="exampleFormControlInput1"><b>Endereço de Email </b></label>
+                    <input onChange={alterarEmail} type="email" className="form-control mt-1" placeholder="nome@exemplo.com" autoFocus required />
                 </div>
                 <div className="form-group">
-                    <label for="exampleFormControlInput1">Telefone</label>
-                    <input onChange={alterarTelefone} type="telephone" className="form-control" placeholder="(99) 99999-9999" required />
+                    <label for="exampleFormControlInput1"><b>Telefone</b></label>
+                    <input onChange={alterarTelefone} type="telephone" className="form-control mt-1" placeholder="(99) 99999-9999" required />
                 </div>
                 <div className="form-group">
-                    <label for="exampleFormControlInput1">Setor</label>
-                    <select onChange={alterarSetor} className="custom-select custom-select-lg">
+                    <label for="exampleFormControlInput1"><b>Setor</b></label>
+                    <select onChange={alterarSetor} className="custom-select custom-select-lg mt-1">
                         <option selected>Selecione uma Opção Para Prosseguir</option>
                         <option value="1">Suporte</option>
                     </select>
                 </div>
                 <div className="form-group mt-2">
-                    <label for="exampleFormControlTextarea1">Descreva sua Solicitação</label>
-                    <textarea onChange={alterarSolicitacao} className="form-control solicitacao" rows="10" required></textarea>
+                    <label for="exampleFormControlTextarea1"><b>Descreva sua Solicitação</b></label>
+                    <textarea onChange={alterarSolicitacao} className="form-control solicitacao mt-1" rows="10" required></textarea>
                 </div>
 
-                <button onClick={EnviarEmail} className="btnEnviar w-100 btn-lg mt-3" type="button">Enviar</button>
+                <button onClick={EnviarEmail} className="btnEnviar w-100 btn-lg mt-2" type="button">Enviar</button>
                 {
                     Sucesso === 'N' ? alert("Erro ao Enviar Email!") : null
                 }
