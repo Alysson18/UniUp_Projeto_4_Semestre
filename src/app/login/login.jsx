@@ -1,16 +1,19 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, event } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import { AuthContext } from '../Context/auth';
 import './login.css';
 import api from '../config/api';
+import md5 from 'md5';
 
 
 function Login() {
+
 
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
     const [Sucesso, setSucesso] = useState('Nulo');
     const { setLogado } = useContext(AuthContext);
+    const senhaHash = md5(senha)
 
 
     function LoginUsuario() {
@@ -18,7 +21,8 @@ function Login() {
             setSucesso('B')
         }
         else {
-            api.post("/login", { "email": email, "senha": senha }).then(function (AxiosResponse) {
+
+            api.post("/login", { "email": email, "senha": senhaHash }).then(function (AxiosResponse) {
                 localStorage.setItem("logado", "S");
                 localStorage.setItem("nomeAluno", AxiosResponse.data.nome)
                 setLogado(true);

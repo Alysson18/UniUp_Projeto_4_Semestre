@@ -12,7 +12,7 @@ function Menu() {
         localStorage.removeItem("nomeAluno");
     }
 
-    return <nav className="navbar  navbar-expand-md navbar-dark">
+    return <nav className="navbar navbar-expand-md navbar-dark">
 
         <div className="container">
             <Link to="/app/site" className="navbar-brand logo">
@@ -49,10 +49,12 @@ function Menu() {
                 </ul>
             </div>
             <div className="nomeAluno">
-                <label className="lbSaudacao"> Seja Bem Vindo </label>
+                <label className="lbSaudacao "> Seja Bem Vindo</label>
+                <br id='linha' />
                 <label className="lbAluno"> {localStorage.getItem("nomeAluno")}</label>
             </div>
         </div>
     </nav>
+
 }
 export default Menu

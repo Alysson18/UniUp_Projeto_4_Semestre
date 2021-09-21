@@ -4,7 +4,7 @@ import './styles.css';
 
 function Banner() {
 
-    return <div id="carouselExampleFade" className="carousel slide carousel-fade banner" data-bs-ride="carousel">
+    return <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
         <div className="carousel-inner">
             <div className="carousel-item active">
                 <img src="../img/UniToledo.jpg" className="d-block w-100" alt="..." />

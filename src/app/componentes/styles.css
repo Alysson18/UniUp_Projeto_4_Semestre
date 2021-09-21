@@ -10,7 +10,7 @@
 .Itens_Nav_Bar{
     margin: auto;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: 20px;
 }
 
 .logo{
@@ -33,14 +33,6 @@
     height: 50px;
 }
 
-
-.banner{
-    margin: auto;
-    position: absolute;
-    margin-top: auto;
-    width: auto;
-}
-
 .nomeAluno{
     width: auto;  
     margin: auto;
@@ -53,11 +45,21 @@
     color: silver;
     font-size: 10pt;
     margin: auto;
-    position: absolute; 
+    margin-bottom: 0px;
+    vertical-align: bottom;
 }
 
 .lbAluno{
     color: silver;
     font-size: 10pt;
-   margin-top: 15px;
+    margin-top: 0px;
+    position: top;
+    vertical-align: top;
+    text-align: left;   
+}
+
+.noticias{
+    margin: auto;
+    margin-top: auto;
+    width: auto;
 }
