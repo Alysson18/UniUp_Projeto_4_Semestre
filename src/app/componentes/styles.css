@@ -1,10 +1,14 @@
 .container{
    margin: auto;
-   margin-left: auto  
+   margin-left: auto;
+ 
 }
 
-.navbar{
-    background-color: black;
+.menu{
+    width: 100%;
+    top: 0;
+    margin: auto;
+    position: sticky;
 }
 
 .Itens_Nav_Bar{
@@ -12,6 +16,7 @@
     margin-right: auto;
     margin-left: 20px;
 }
+
 
 .logo{
     margin-right: 0px;

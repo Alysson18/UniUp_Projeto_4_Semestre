@@ -5,14 +5,26 @@ import { AuthContext } from '../Context/auth';
 function Menu() {
 
     const { setLogado } = useContext(AuthContext);
+    const hora = new Date;
+
+    if ((hora.getHours() >= 3) && (hora.getHours() < 12)) {
+        sessionStorage.setItem("saudacao", "Bom Dia!");
+    }
+    else if ((hora.getHours() >= 12) && (hora.getHours() < 18)) {
+        sessionStorage.setItem("saudacao", "Boa Tarde!");
+    }
+    else if (hora.getHours() >= 18) {
+        sessionStorage.setItem("saudacao", "Boa Noite!");
+    }
 
     function Logout() {
         setLogado(false);
-        localStorage.removeItem("logado");
-        localStorage.removeItem("nomeAluno");
+        sessionStorage.removeItem("logado");
+        sessionStorage.removeItem("nomeAluno");
+
     }
 
-    return <nav className="navbar navbar-expand-md navbar-dark">
+    return <nav className="navbar fixed-top navbar-expand-md navbar-dark menu">
 
         <div className="container">
             <Link to="/app/site" className="navbar-brand logo">
@@ -49,9 +61,9 @@ function Menu() {
                 </ul>
             </div>
             <div className="nomeAluno">
-                <label className="lbSaudacao "> Seja Bem Vindo</label>
+                <label className="lbSaudacao "> {sessionStorage.getItem("saudacao")}</label>
                 <br id='linha' />
-                <label className="lbAluno"> {localStorage.getItem("nomeAluno")}</label>
+                <label className="lbAluno"> {sessionStorage.getItem("nomeAluno")}</label>
             </div>
         </div>
     </nav>

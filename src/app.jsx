@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { BrowserRouter, Redirect, Route, Switch, } from 'react-router-dom';
 import { AuthContext } from './app/Context/auth.jsx';
-import ReactDOM from 'react-dom';
+
 
 /* Paginas */
 import Site from './site/site.jsx';

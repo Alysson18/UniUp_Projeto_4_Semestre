@@ -1,4 +1,4 @@
-import React, { useState, useContext, event } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import { AuthContext } from '../Context/auth';
 import './login.css';
@@ -15,25 +15,38 @@ function Login() {
     const { setLogado } = useContext(AuthContext);
     const senhaHash = md5(senha)
 
-
     function LoginUsuario() {
         if (email === '' || senha === '') {
             setSucesso('B')
         }
         else {
-
             api.post("/login", { "email": email, "senha": senhaHash }).then(function (AxiosResponse) {
-                localStorage.setItem("logado", "S");
-                localStorage.setItem("nomeAluno", AxiosResponse.data.nome)
+                sessionStorage.setItem("logado", "S");
+                sessionStorage.setItem("nomeAluno", AxiosResponse.data.nome);
                 setLogado(true);
                 setSucesso('S')
             }).catch(function (error) {
-                localStorage.setItem("logado", "N");
+                sessionStorage.setItem("logado", "S");
                 setLogado(false);
                 setSucesso('N')
             });
         }
     }
+
+    function EnvioEnter(event) {
+        if (document.getElementById("floatingPassword")) {
+            if (event.keyCode === 13) {
+                LoginUsuario()
+            }
+        }
+    }
+
+    function EnterTab(event) {
+        if (event.keyCode === 13) {
+            document.getElementById("floatingPassword").focus();
+        }
+    }
+
 
     function alterarEmail(event) {
         setEmail(event.target.value)
@@ -49,11 +62,11 @@ function Login() {
             <h1 className="h3 mb-3 fw-normal">Login</h1>
 
             <div className="form-floating">
-                <input onChange={alterarEmail} type="email" className="form-control edtEmail" id="floatingInput" placeholder="Email" />
+                <input onChange={alterarEmail} onKeyDown={EnterTab} type="email" className="form-control edtEmail" id="floatingInput" placeholder="Email" />
                 <label for="floatingInput">E-mail</label>
             </div>
             <div className="form-floating">
-                <input onChange={alterarSenha} type="password" className="form-control edtSenha" id="floatingPassword" placeholder="Senha" />
+                <input onChange={alterarSenha} onKeyDown={EnvioEnter} type="password" className="form-control edtSenha" id="floatingPassword" placeholder="Senha" />
                 <label for="floatingPassword">Senha</label>
             </div>
 
@@ -73,6 +86,7 @@ function Login() {
             </div>
             <footer className="mt-5 mb-4 text-muted">&copy;Desenvolvido Por UNIUP</footer>
         </form >
+
     </div>
 
 }
