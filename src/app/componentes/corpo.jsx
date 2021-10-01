@@ -64,8 +64,6 @@ function Corpo() {
                 <img className="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Hazard_X.svg/500px-Hazard_X.svg.png" data-holder-rendered="true" />
             </div>
         </div>
-
-
     </div>
 
 }

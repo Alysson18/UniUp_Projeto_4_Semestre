@@ -61,6 +61,12 @@
     position: top;
     vertical-align: top;
     text-align: left;   
+    text-decoration: none;
+
+}
+
+.lbAluno:hover{
+    color: rgb(173, 173, 173);
 }
 
 .noticias{

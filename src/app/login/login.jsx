@@ -33,6 +33,14 @@ function Login() {
         }
     }
 
+
+
+    function EnterTab(event) {
+        if (event.keyCode === 13) {
+            document.getElementById("floatingPassword").focus();
+        }
+    }
+
     function EnvioEnter(event) {
         if (document.getElementById("floatingPassword")) {
             if (event.keyCode === 13) {
@@ -41,11 +49,6 @@ function Login() {
         }
     }
 
-    function EnterTab(event) {
-        if (event.keyCode === 13) {
-            document.getElementById("floatingPassword").focus();
-        }
-    }
 
 
     function alterarEmail(event) {

@@ -63,10 +63,11 @@ function Menu() {
             <div className="nomeAluno">
                 <label className="lbSaudacao "> {sessionStorage.getItem("saudacao")}</label>
                 <br id='linha' />
-                <label className="lbAluno"> {sessionStorage.getItem("nomeAluno")}</label>
+                <Link className="lbAluno" to="/app/alterardados/aluno"> {sessionStorage.getItem("nomeAluno")}
+                </Link>
             </div>
         </div>
-    </nav>
+    </nav >
 
 }
 export default Menu
