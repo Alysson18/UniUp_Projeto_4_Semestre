@@ -24,9 +24,27 @@
    text-align: center;   
 }
 
-.footer{
-  position: fixed; 
-    bottom:0;
-    width:100%;    
+.fotter{
+    width: 100%;
+    margin-top: 70px;
+    position: relative;
+    vertical-align: bottom;
+    bottom: 0;
+    left: 0; 
+
+}
+
+.tabela{
+    border-style: solid;
+    border-color:rgb(207, 206, 206);
+    border-width: 1px; 
+    border-bottom: 1px;
+  
+}
+
+.borda{
+    border-bottom: 2px;
+    border-style: solid;
+
 }
 
