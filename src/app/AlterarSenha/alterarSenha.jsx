@@ -1,13 +1,11 @@
-import React, { useState } from 'react';
-
-
+import React, { useState, component, useEffect } from 'react';
+import './alterarSenha.css'
 
 function AlterarSenha() {
 
-
-
-    return <div>Ola Aqui vc Irá Alterar Senha</div>
-
+    return <div>
+        Olá
+    </div>
 }
 export default AlterarSenha
 

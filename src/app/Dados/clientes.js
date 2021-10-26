@@ -1,4 +1,8 @@
+
+
 const clientes = [
+
+
 
     {
         id: 1,
@@ -22,5 +26,4 @@ const clientes = [
     }
 
 ];
-
 export default clientes;

@@ -12,7 +12,11 @@ function Site() {
             <Banner />
             <Corpo />
         </div>
-        <Footer />
+
+        <footer>
+            <Footer />
+        </footer>
+
     </div>
 }
 export default Site

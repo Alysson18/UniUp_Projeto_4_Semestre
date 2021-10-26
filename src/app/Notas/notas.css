@@ -1,0 +1,32 @@
+.grid{
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    margin: auto;    
+}
+
+#disciplina{
+ 
+    color: black;
+    font-weight: bold;
+}
+
+#av1{
+    text-align: center;   
+
+}
+
+#av2{
+    text-align: center;   
+}
+
+#av3{
+   text-align: center;   
+}
+
+.footer{
+  position: fixed; 
+    bottom:0;
+    width:100%;    
+}
+

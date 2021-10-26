@@ -9,6 +9,7 @@ import Login from './app/login/login.jsx';
 import ResetSenha from './app/ResetSenha/resetSenha.jsx';
 import Contato from './app/Contato/contato.jsx';
 import AlterarSenha from './app/AlterarSenha/alterarSenha.jsx';
+import Notas from './app/Notas/notas.jsx';
 
 
 function App() {
@@ -29,6 +30,8 @@ function App() {
       <Route exact path='/' component={Login} />
       <Route exact path='/app/esquecisenha' component={ResetSenha} />
       <Route exact path='/app/alterarsenha' component={AlterarSenha} />
+      <Route exact path='/app/notas' component={Notas} />
+
 
       <SecureRoute exact path='/app/site' component={Site} />
       <SecureRoute exact path='/app/contato' component={Contato} />

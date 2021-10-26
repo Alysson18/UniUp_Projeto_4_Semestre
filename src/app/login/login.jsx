@@ -23,6 +23,7 @@ function Login() {
             api.post("/login", { "email": email, "senha": senhaHash }).then(function (AxiosResponse) {
                 sessionStorage.setItem("logado", "S");
                 sessionStorage.setItem("nomeAluno", AxiosResponse.data.nome);
+                sessionStorage.setItem("idAluno", AxiosResponse.data.id);
                 setLogado(true);
                 setSucesso('S')
             }).catch(function (error) {

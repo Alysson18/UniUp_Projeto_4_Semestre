@@ -47,7 +47,7 @@ function Menu() {
                         <Link to="/#" className="nav-link">Quadro de Horários</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/#" className="nav-link">Notas de Provas</Link>
+                        <Link to="/app/notas" className="nav-link">Notas de Provas</Link>
                     </li>
                     <li className="nav-item">
                         <Link to="/app/contato" className="nav-link">Frequência</Link>
@@ -56,7 +56,8 @@ function Menu() {
                         <Link to="/app/contato" className="nav-link">Contato</Link>
                     </li>
                     <li className="nav-item">
-                        <a onClick={Logout} className="nav-link logout">Sair</a>
+                        <a href="/" onClick={Logout} className="nav-link logout">Sair</a>
+
                     </li>
                 </ul>
             </div>
