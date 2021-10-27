@@ -44,7 +44,7 @@ function Menu() {
                         <Link to="/#" className="nav-link">Matérias</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/#" className="nav-link">Quadro de Horários</Link>
+                        <Link to="/app/horario" className="nav-link">Quadro de Horários</Link>
                     </li>
                     <li className="nav-item">
                         <Link to="/app/notas" className="nav-link">Notas de Provas</Link>
