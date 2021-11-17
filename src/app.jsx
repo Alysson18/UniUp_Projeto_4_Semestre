@@ -30,12 +30,13 @@ function App() {
       <Route exact path='/' component={Login} />
       <Route exact path='/app/esquecisenha' component={ResetSenha} />
       <Route exact path='/app/alterarsenha' component={AlterarSenha} />
-      <Route exact path='/app/notas' component={Notas} />
-      <Route exact path='/app/horario' component={Horario} />
+
 
 
       <SecureRoute exact path='/app/site' component={Site} />
       <SecureRoute exact path='/app/contato' component={Contato} />
+      <SecureRoute exact path='/app/notas' component={Notas} />
+      <SecureRoute exact path='/app/horario' component={Horario} />
 
     </Switch>
   </BrowserRouter>;

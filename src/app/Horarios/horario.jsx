@@ -18,17 +18,17 @@ function AlterarSenha() {
     }, [setHorario])
 
 
-    return <div>
+    return <div className="tht">
         <Menu />
 
-        <div className="grid">
-            <h1>Quadro de Horários</h1>
-            <br />
-            <div className="tabela">
+        <div className="grid_horario">
+            <h1 id="qdh">Quadro de Horários</h1>
+
+            <form className="tabela_hr">
                 <table className="table table-striped table-hover table-responsive">
                     <thead>
-                        <tr className="borda">
-                            <th scope="cool">Horario</th>
+                        <tr className="borda_hr">
+                            <th scope="cool" id="horario">Horário</th>
                             <th scope="cool" id="av1">Segunda</th>
                             <th scope="cool" id="av2">Terça</th>
                             <th scope="cool" id="av2">Quarta</th>
@@ -39,25 +39,25 @@ function AlterarSenha() {
                     </thead>
                     <tbody>
                         {
-                            horario.horarioAluno && horario.horarioAluno.map((hr) =>
+                            horario.horarioAluno.map((hr) =>
                             (
-                                <tr className="col-notas">
-                                    <td id="disciplina">{hr.horario}</td>
-                                    <td id='av1'>{hr.disciplina_Segunda}</td>
-                                    <td id="av2">{hr.disciplina_Terca}</td>
-                                    <td id="av3">{hr.disciplina_Quarta}</td>
-                                    <td id="av3">{hr.disciplina_Quinta}</td>
-                                    <td id="av3">{hr.disciplina_Sexta}</td>
+                                <tr className="col-horario">
+                                    <td id="horario">{hr.horario}</td>
+                                    <td id="Segunda">{hr.disciplina_Segunda}</td>
+                                    <td id="Terca">{hr.disciplina_Terca}</td>
+                                    <td id="Quarta">{hr.disciplina_Quarta}</td>
+                                    <td id="Quinta">{hr.disciplina_Quinta}</td>
+                                    <td id="Sexta">{hr.disciplina_Sexta}</td>
                                 </tr>
                             ))
                         }
                     </tbody>
                 </table>
-            </div>
+            </form>
 
         </div>
 
-        <footer className="fotter fixed-bottom">
+        <footer className="fixed-bottom">
             <Footer />
         </footer>
 

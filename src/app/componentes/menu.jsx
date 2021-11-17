@@ -56,7 +56,7 @@ function Menu() {
                         <Link to="/app/contato" className="nav-link">Contato</Link>
                     </li>
                     <li className="nav-item">
-                        <a href="/" onClick={Logout} className="nav-link logout">Sair</a>
+                        <a onClick={Logout} className="nav-link logout">Sair</a>
 
                     </li>
                 </ul>

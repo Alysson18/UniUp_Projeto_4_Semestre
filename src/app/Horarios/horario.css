@@ -1,56 +1,48 @@
-.grid{
+.grid_horario{
     width: 100%;
-    max-width: 800px;
-    padding: 20px;
     margin: auto;    
+    padding: 20px;    
+    padding-bottom: 0px;
+    max-width: 920px;
 }
 
-#disciplina{
- 
+#horario{
+    max-width: 540px;
+    width: 10px;
     color: black;
     font-weight: bold;
     border-color:rgb(207, 206, 206);
+    text-align: center;
 }
 
-#av1{
-    text-align: center;   
-    border-color:rgb(207, 206, 206);
-
-
+#qdh{
+    margin-bottom: 20px;
 }
 
-#av2{
-    text-align: center; 
-    border-color:rgb(207, 206, 206);  
-}
-
-#av3{
-   text-align: center;   
-   border-color:rgb(207, 206, 206);
-}
-
-.fotter{
+.fotter_hr{
     width: 100%;
-    margin-top: 70px;
+    margin-top: 47px;
     position: relative;
     vertical-align: bottom;
     bottom: 0;
     left: 0; 
-
+    
 }
 
-.tabela{
+.tabela_hr{
     border-style: solid;
     border-color:rgb(207, 206, 206);
     border-width: 1px; 
-    border-bottom: 1px;
-
-   
+    border-bottom: 1px;          
 }
 
-.borda{
+.borda_hr{
     border-bottom: 2px;
     border-style: solid;
 
 }
 
+.col-horario{
+    text-align: center;
+    vertical-align: middle;
+}

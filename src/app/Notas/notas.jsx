@@ -16,14 +16,15 @@ function AlterarSenha() {
         }
         fetchGetList();
     }, [setNotas])
+    var av1, av2, av3;
 
 
     return <div>
+
         <Menu />
 
-        <div className="grid">
-            <h1>Avaliação</h1>
-            <br />
+        <div className="grid_notas">
+            <h1 id="ava" > Avaliação</h1>
             <div className="tabela">
                 <table className="table table-striped table-hover table-responsive">
                     <thead>
@@ -36,17 +37,48 @@ function AlterarSenha() {
                         </tr>
                     </thead>
                     <tbody>
+
+
+
                         {
-                            notas.notaAluno && notas.notaAluno.map((nt) =>
-                            (
+                            notas.notaAluno?.map((nt) => (
+
+
                                 <tr className="col-notas">
                                     <td id="disciplina">{nt.disciplina}</td>
-                                    <td id='av1'>{nt.av1}</td>
-                                    <td id="av2">{nt.av2}</td>
-                                    <td id="av3">{nt.av3}</td>
+                                    <script type="text/javascript">
+                                        {
+                                            av1 = (parseInt(nt.av1, 10) >= 7) ?
+                                                <td id='av1' style={{ color: 'blue' }}>{nt.av1}</td> :
+                                                (nt.av1 !== '-') ?
+                                                    <td id='av1' style={{ color: 'red' }}>{nt.av1}</td> :
+                                                    <td id='av1' style={{ color: 'black' }}>{nt.av1}</td>
+                                        }
 
+                                        {
+                                            av2 = (parseInt(nt.av2, 10) >= 7) ?
+                                                <td id='av2' style={{ color: 'blue' }}>{nt.av2}</td> :
+                                                (nt.av2 !== '-') ?
+                                                    <td id='av2' style={{ color: 'red' }}>{nt.av2}</td> :
+                                                    <td id='av2' style={{ color: 'black' }}>{nt.av2}</td>
+                                        }
+
+                                        {
+                                            av3 = (parseInt(nt.av3, 10) >= 7) ?
+                                                <td id='av3' style={{ color: 'blue' }}>{nt.av3}</td> :
+                                                (nt.av2 !== '-') ?
+                                                    <td id='av3' style={{ color: 'red' }}>{nt.av3}</td> :
+                                                    <td id='av3' style={{ color: 'black' }}>{nt.av3}</td>
+                                        }
+
+                                    </script>
+
+                                    {av1}
+                                    {av2}
+                                    {av3}
                                 </tr>
                             ))
+
                         }
                     </tbody>
                 </table>
@@ -54,7 +86,7 @@ function AlterarSenha() {
 
         </div>
 
-        <footer className="fotter fixed-bottom">
+        <footer className="fixed-bottom">
             <Footer />
         </footer>
 
