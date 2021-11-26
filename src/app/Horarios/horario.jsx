@@ -41,7 +41,7 @@ function AlterarSenha() {
                         {
                             horario.horarioAluno.map((hr) =>
                             (
-                                <tr className="col-hours">
+                                <tr className="col-horario">
                                     <td id="horario">{hr.horario}</td>
                                     <td id="Segunda">{hr.disciplina_Segunda}</td>
                                     <td id="Terca">{hr.disciplina_Terca}</td>
