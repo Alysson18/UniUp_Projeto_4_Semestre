@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: "http://localhost:9001/api"
+    baseURL: "http://uniup.ddns.net:9001/api"
 
 });
 
