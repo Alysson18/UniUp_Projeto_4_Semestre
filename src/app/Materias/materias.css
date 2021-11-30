@@ -3,7 +3,7 @@
     margin: auto;    
     padding: 20px;    
     padding-bottom: 0px;
-    max-width: 920px;
+    max-width: 800px;
 }
 
 #materias{
@@ -15,7 +15,7 @@
 
 #professor{
     text-align: left;  
-    width: 30%;
+    width: 34%;
     border-color:rgb(207, 206, 206);
 }
 
@@ -29,8 +29,7 @@
     position: relative;
     vertical-align: bottom;
     bottom: 0;
-    left: 0; 
-    
+    left: 0;     
 }
 
 .tabela{
@@ -43,7 +42,6 @@
 .borda{
     border-bottom: 2px;
     border-style: solid;
-
 }
 
 .col-materias{

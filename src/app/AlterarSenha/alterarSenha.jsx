@@ -17,22 +17,23 @@ function AlterarSenha() {
         if (confirmaSenha !== senha) {
             setSucesso('N')
         }
-        else if(confirmaSenha === '' || senha === '' || codigo === ''){
+        else if (confirmaSenha === '' || senha === '' || codigo === '') {
             setSucesso('B')
         }
         else {
-            api.put("/alterarsenha", { "codigo": codigo , "senha": senhaHash }).then(function (AxiosResponse) {
-                if(AxiosResponse.data === "Senha Alterada com Sucesso"){
-                    setSucesso('A')
-                    setSucesso('S') 
+            api.put("/alterarsenha", { "codigo": codigo, "senha": senhaHash }).then(function (AxiosResponse) {
+                if (AxiosResponse.data === "Senha Alterada Com Sucesso") {
+
+                    alert("Senha alterada com sucesso, faça o login com a nova senha!");
+                    setSucesso('S')
                 }
-                else{
+                else {
                     alert(AxiosResponse.data)
                     document.getElementById("floatingInput").value = ""
                     document.getElementById("floatingPassword").value = ""
                     document.getElementById("floatingConfirmPassword").value = ""
                 }
-                
+
             }).catch(function (error) {
                 setSucesso('C')
             });
@@ -88,15 +89,12 @@ function AlterarSenha() {
                 Sucesso === 'N' ? <div className="alert alert-danger mt-2">As senhas não correspondem</div> : null
             }
             {
-                Sucesso === 'A' ? alert("Senha alterada com sucesso, faça o login com a nova senha!") : null
-            }
-            {
-                Sucesso === 'S' ? <Redirect to="/" /> : null
+                Sucesso === 'S' ? <Redirect to="/app/site" /> : null
             }
             {
                 Sucesso === 'B' ? <div className="alert alert-danger mt-2"> O código e a senha devem ser preenchidos! </div> : null
             }
-             {
+            {
                 Sucesso === 'C' ? <div className="alert alert-danger mt-2">Não foi possivel estabelecer conexão com a internet</div> : null
             }
             <footer className="mt-5 mb-4 text-muted">&copy;Desenvolvido Por UNIUP</footer>

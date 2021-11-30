@@ -16,7 +16,7 @@ function Frequencia() {
         }
         fetchGetList();
     }, [setFrequencia])
- 
+
 
     return <div>
 
@@ -29,11 +29,11 @@ function Frequencia() {
                     <thead>
                         <tr className="borda">
                             <th scope="cool" id="disciplina">Disciplina</th>
-                            <th scope="cool" id="faltas">Frequência</th>
+                            <th scope="cool" id="faltas">Faltas</th>
 
                         </tr>
                     </thead>
-                         <tbody>
+                    <tbody>
                         {
                             frequencia.frequenciaAluno.map((fq) =>
                             (

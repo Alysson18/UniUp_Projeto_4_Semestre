@@ -66,7 +66,7 @@ function AlterarSenha() {
                                         {
                                             av3 = (parseInt(nt.av3, 10) >= 7) ?
                                                 <td id='av3' style={{ color: 'blue' }}>{nt.av3}</td> :
-                                                (nt.av2 !== '-') ?
+                                                (nt.av3 !== '-') ?
                                                     <td id='av3' style={{ color: 'red' }}>{nt.av3}</td> :
                                                     <td id='av3' style={{ color: 'black' }}>{nt.av3}</td>
                                         }
