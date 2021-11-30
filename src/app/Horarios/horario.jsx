@@ -4,7 +4,7 @@ import Menu from '../componentes/menu';
 import api from '../config/api';
 import './horario.css'
 
-function AlterarSenha() {
+function Horario() {
 
     const [horario, setHorario] = useState({ horarioAluno: [] });
 
@@ -64,5 +64,5 @@ function AlterarSenha() {
     </div >
 
 }
-export default AlterarSenha
+export default Horario
 

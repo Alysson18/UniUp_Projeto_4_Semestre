@@ -1,0 +1,52 @@
+.grid_materias{
+    width: 100%;
+    margin: auto;    
+    padding: 20px;    
+    padding-bottom: 0px;
+    max-width: 920px;
+}
+
+#materias{
+    color: black;
+    font-weight: bold;
+    text-align: left;   
+    border-color:rgb(207, 206, 206);
+}
+
+#professor{
+    text-align: left;  
+    width: 30%;
+    border-color:rgb(207, 206, 206);
+}
+
+#qdh{
+    margin-bottom: 20px;
+}
+
+.fotter_hr{
+    width: 100%;
+    margin-top: 47px;
+    position: relative;
+    vertical-align: bottom;
+    bottom: 0;
+    left: 0; 
+    
+}
+
+.tabela{
+    border-style: solid;
+    border-color:rgb(207, 206, 206);
+    border-width: 1px; 
+    border-bottom: 1px;          
+}
+
+.borda{
+    border-bottom: 2px;
+    border-style: solid;
+
+}
+
+.col-materias{
+    text-align: center;
+    vertical-align: middle;
+}

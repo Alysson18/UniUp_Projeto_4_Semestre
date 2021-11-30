@@ -1,0 +1,52 @@
+.form-container{
+    height: 100vh;
+    background-color: #f3f5f6;
+}
+
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="codigo"] {
+  margin-bottom: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.login-links a{
+    text-decoration: none;
+    font-size: 13pt;
+    color: #fa6c00; 
+}
+
+.btnLogin{
+  background-color: #f2890b;  
+  border-style: none;
+  border-color: #c36f2f;
+  color: #fff; 
+}
+
+.btnLogin:hover{
+  background-color: #fa9a51;  
+  color: #fff; 
+}
+
+.form-control:focus{
+  border-color: #ffa968;  
+  box-shadow: 0 0 3px 3px #ffa968bb ;
+  outline: 0 none;  
+}

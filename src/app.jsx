@@ -11,6 +11,9 @@ import Contato from './app/Contato/contato.jsx';
 import AlterarSenha from './app/AlterarSenha/alterarSenha.jsx';
 import Notas from './app/Notas/notas.jsx';
 import Horario from './app/Horarios/horario.jsx';
+import Materias from './app/Materias/materias.jsx';
+import Frequencia from './app/Frequencia/frequencia.jsx';
+import AlterarDados from './app/AlterarDados/alterarDados.jsx';
 
 function App() {
   const { logado } = useContext(AuthContext);
@@ -37,6 +40,9 @@ function App() {
       <SecureRoute exact path='/app/contato' component={Contato} />
       <SecureRoute exact path='/app/notas' component={Notas} />
       <SecureRoute exact path='/app/horario' component={Horario} />
+      <SecureRoute exact path='/app/disciplinas' component={Materias} />
+      <SecureRoute exact path='/app/frequencia' component={Frequencia} />
+      <SecureRoute exact path='/app/alterardados' component={AlterarDados} />
 
     </Switch>
   </BrowserRouter>;

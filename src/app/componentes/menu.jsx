@@ -41,7 +41,7 @@ function Menu() {
                         <Link to="/app/site" className="nav-link">Inicio</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/#" className="nav-link">Matérias</Link>
+                        <Link to="/app/disciplinas" className="nav-link">Matérias</Link>
                     </li>
                     <li className="nav-item">
                         <Link to="/app/horario" className="nav-link">Quadro de Horários</Link>
@@ -50,7 +50,7 @@ function Menu() {
                         <Link to="/app/notas" className="nav-link">Notas de Provas</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/app/contato" className="nav-link">Frequência</Link>
+                        <Link to="/app/frequencia" className="nav-link">Frequência</Link>
                     </li>
                     <li className="nav-item">
                         <Link to="/app/contato" className="nav-link">Contato</Link>
@@ -64,7 +64,7 @@ function Menu() {
             <div className="nomeAluno">
                 <label className="lbSaudacao "> {sessionStorage.getItem("saudacao")}</label>
                 <br id='linha' />
-                <Link className="lbAluno" to="/app/alterardados/aluno"> {sessionStorage.getItem("nomeAluno")}
+                <Link className="lbAluno" to="/app/alterardados"> {sessionStorage.getItem("nomeAluno")}
                 </Link>
             </div>
         </div>

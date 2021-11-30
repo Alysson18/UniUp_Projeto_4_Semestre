@@ -1,0 +1,83 @@
+.form-container{
+    background-color: #f3f5f6;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+}
+
+.grid_faltas{
+  margin: auto;
+}
+
+#nome{
+  width: 99%; 
+}
+
+#emailDados{
+  width: 99%; 
+}
+
+#telefoneDados{
+  width: 99%;
+  margin-left: 3px;
+}
+
+#data_Nascimento{
+  width: 99%;
+  margin-left: 3px;
+}
+
+#rg{
+  width: 99%;
+}
+
+#cpf{
+  width: 99%;
+  margin-left: 3px;
+}
+
+#endereco{
+  width: 98%;
+}
+
+#cidade{
+  width: 98%;
+}
+
+#estado{
+  width: 98%;
+}
+
+
+.posicaotext1{
+
+  width: 380px;
+  height: 70px;
+  display: inline-block;
+
+}
+
+.posicaotext2{
+
+  width: 253px;
+  height: 70px;
+  display: inline-block;
+
+}
+
+.form-group {
+  width: auto;
+  display: inline;
+}
+
+
+
+.form-control:focus{
+  border-color: #ffa968;  
+  box-shadow: 0 0 3px 3px #ffa968bb ;
+  outline: 0 none;  
+}
+
