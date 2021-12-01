@@ -41,7 +41,7 @@
 .nomeAluno{
     width: auto;  
     margin: auto;
-    margin-left: 30px;
+    margin-left: 1px;
     margin-right: auto;
     height: auto;
 }
@@ -73,4 +73,13 @@
     margin: auto;
     margin-top: auto;
     width: auto;
+}
+
+#foto{
+    margin: 0px;
+    margin-top: 0px;
+    margin-bottom: -25px;
+    margin-right: 05px;
+    margin-left: -60px;
+
 }

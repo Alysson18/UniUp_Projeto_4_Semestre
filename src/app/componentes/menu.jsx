@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../Context/auth';
 
+
 function Menu() {
 
     const { setLogado } = useContext(AuthContext);
@@ -61,11 +62,12 @@ function Menu() {
                     </li>
                 </ul>
             </div>
+
             <div className="nomeAluno">
+                <img id="foto" src={sessionStorage.getItem("FotoAluno")} alt="" width="51" height="51" class="rounded-circle me-2" />
                 <label className="lbSaudacao "> {sessionStorage.getItem("saudacao")}</label>
                 <br id='linha' />
-                <Link className="lbAluno" to="/app/alterardados"> {sessionStorage.getItem("nomeAluno")}
-                </Link>
+                <Link className="lbAluno" to="/app/alterardados"> {sessionStorage.getItem("nomeAluno")}</Link>
             </div>
         </div>
     </nav >

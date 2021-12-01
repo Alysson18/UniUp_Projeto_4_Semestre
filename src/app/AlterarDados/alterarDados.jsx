@@ -86,7 +86,7 @@ function AlterarDados() {
                     <div className="posicaotext1">
                         <div className="form-floating">
                             <input className="form-control" type="text" id="data_Nascimento" aria-label="Data de nascimento" disabled />
-                            <label for="data_Nascimento">Data de nascimento</label>
+                            <label for="data_Nascimento">Data de Nascimento</label>
                         </div>
                     </div>
 

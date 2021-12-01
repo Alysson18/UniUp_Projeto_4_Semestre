@@ -24,10 +24,11 @@ function Login() {
                 sessionStorage.setItem("logado", "S");
                 sessionStorage.setItem("nomeAluno", AxiosResponse.data.nome);
                 sessionStorage.setItem("idAluno", AxiosResponse.data.id);
+                sessionStorage.setItem("FotoAluno", AxiosResponse.data.foto);
                 setLogado(true);
                 setSucesso('S')
             }).catch(function (error) {
-                sessionStorage.setItem("logado", "S");
+                sessionStorage.setItem("logado", "N");
                 setLogado(false);
                 setSucesso('N')
             });

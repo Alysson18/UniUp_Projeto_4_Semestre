@@ -3,7 +3,7 @@ import { Redirect } from 'react-router-dom';
 import md5 from 'md5';
 import api from '../config/api';
 import './alterarSenha.css'
-import axios from 'axios';
+
 
 function AlterarSenha() {
 
