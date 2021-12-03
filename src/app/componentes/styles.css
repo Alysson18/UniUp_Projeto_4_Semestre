@@ -1,6 +1,7 @@
 .container{
    margin: auto;
    margin-left: auto;
+   margin-right: auto;
  
 }
 
@@ -41,7 +42,7 @@
 .nomeAluno{
     width: auto;  
     margin: auto;
-    margin-left: 1px;
+    margin-left: auto;
     margin-right: auto;
     height: auto;
 }

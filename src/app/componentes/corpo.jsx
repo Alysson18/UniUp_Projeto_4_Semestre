@@ -56,7 +56,7 @@ function Corpo() {
         <div className="row featurette">
             <div className="col-md-7">
                 <h2 className="featurette-heading">Curso de Análise e Desenv. de Sistemas Ganha um Laboratório.</h2>
-                <p className="lead">Depois de muitos pedidos a Faculdade se readequou e criou um Laboratório para que os alunos possam ter suas aulas praticas e se desenvolvam ainda mais.</p>
+                <p className="lead">Depois de muitos pedidos a Faculdade se readequou e criou um Laboratório para que os alunos possam ter suas aulas práticas e se desenvolvam ainda mais.</p>
             </div>
             <div className="col-md-5">
                 <img className="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="https://cms.ufmt.br/files/galleries/124/Galeria%20de%20Imagens/D2a0d4fc340591344ffabca2ee9d92f70c1384292.jpg" data-holder-rendered="true" />
